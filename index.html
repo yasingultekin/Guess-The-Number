@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess The Number</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Guess <span>the</span> Number</h1>
+      <p>Let's play a game with you!</p>
+      <p>
+        Please enter a number between <span class="start">1</span> -
+        <span class="end">100</span>
+      </p>
+      <main>
+        <input
+          type="number"
+          name="number"
+          id="number"
+          placeholder="Enter a number"
+        />
+        <button type="submit" class="check">Check</button>
+        <button
+          type="submit"
+          class="restart"
+          style="display: none"
+          onclick="window.location.reload(false)"
+        >
+          Restart
+        </button>
+        <p>You have <span class="heart">7</span> chance</p>
+      </main>
+    </div>
+  </body>
+</html>
