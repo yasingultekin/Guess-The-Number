@@ -23,6 +23,7 @@ const guessNumber = function () {
             start.innerText = numberInput.value;
             numberInput.value = '';
             life--;
+            he
         }
         else if (numberInput.value > random) {
             message.innerText = `This is too lower!\nPlease enter a high number.`;
