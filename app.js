@@ -15,7 +15,7 @@ console.log(random);
 
 
 const guessNumber = function () {
-    if (life > 1) {
+    if (life >= 1) {
         if (numberInput.value > 0 && numberInput.value < 100) {
             if (random == numberInput.value) {
                 message.innerText = `Are you a mind reader? Congrats!`;
