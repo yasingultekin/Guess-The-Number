@@ -8,7 +8,7 @@ let gameEnd = document.querySelector('.game-end');
 const please = document.querySelector('.please');
 const inputContainer = document.querySelector('.input-container');
 const numberInput = document.querySelector('#number');
-let life = 5;
+let life = 7;
 let random = Math.floor(Math.random() * 100 + 1);
 
 console.log(random);
@@ -34,8 +34,6 @@ const guessNumber = function () {
                 life--;
                 heart.innerText = life;
                 down.play();
-                
-                
             }
             else if (numberInput.value > random) {
                 message.innerText = `This is too high!\nPlease enter a lower number.`;
@@ -44,14 +42,12 @@ const guessNumber = function () {
                 life--;
                 heart.innerText = life;
                 up.play();
-            }
-            
+            }           
         }
         else {
             message.innerText = `Please enter a valid number!`
             numberInput.value = '';
-        }
-        
+        }        
     }
      else if (life <= 1) {
         numberInput.value = '';
@@ -62,9 +58,7 @@ const guessNumber = function () {
         gameEnd.innerText = `Sorry! GAME OVER!`;
         gameEnd.style.color = '#FFF323';
         loser.play();
-     }
-
-     
+     }     
 }
 
 numberInput.addEventListener('keydown', (e)=> {
@@ -73,10 +67,8 @@ numberInput.addEventListener('keydown', (e)=> {
     }
  })
 
-
 window.onload = () => {
     numberInput.focus();
 };
 
 check.addEventListener('click', guessNumber);
-
