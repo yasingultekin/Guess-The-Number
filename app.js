@@ -8,19 +8,18 @@ let gameEnd = document.querySelector('.game-end');
 const please = document.querySelector('.please');
 const inputContainer = document.querySelector('.input-container');
 const numberInput = document.querySelector('#number');
-let life = 7;
+let life = 3;
 let random = Math.floor(Math.random() * 100 + 1);
 
 console.log(random);
 
 
 const guessNumber = function () {
-    if (life >= 1) {
+    if (life > 1) {
         if (numberInput.value > 0 && numberInput.value < 100) {
             if (random == numberInput.value) {
                 message.innerText = `Are you a mind reader? Congrats!`;
                 message.style.color = '#06FF00';
-                numberInput.value = '';
                 check.style.display = 'none';
                 gameEnd.style.display = 'none';
                 restart.style.display = 'block';
@@ -49,8 +48,7 @@ const guessNumber = function () {
             numberInput.value = '';
         }        
     }
-     else if (life <= 1) {
-        numberInput.value = '';
+     else {
         numberInput.style.display = 'none';
         check.style.display = 'none';
         message.style.display = 'none';
