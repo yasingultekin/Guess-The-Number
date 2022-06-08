@@ -85,6 +85,9 @@ p {
     font-size: 2rem;
 }
 
+.restart {
+    margin-bottom: 2rem;
+}
 
 
 @media (max-width:470px){
@@ -92,10 +95,13 @@ p {
     h1{
         width: 50%;
         margin-top: -2.7rem;
-        font-size: 1rem;
+        font-size: 2rem;
         text-align: center;
     }
-    .please, .lets, .game-end{      
+    .please, 
+    .lets, 
+    .game-end,
+    .message {      
         font-size: 1rem;  
     }
 
@@ -111,7 +117,7 @@ p {
         line-height: 30px;
         font-size: 10px;
         border-radius: 5px;
-
+        
     }
     .check:active, .restart:active{
         font-size: 13px;

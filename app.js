@@ -64,6 +64,7 @@ const guessNumber = function () {
 numberInput.addEventListener('keydown', (e)=> {
     if (e.keyCode === 13) {
         check.click();
+        numberInput.focus();
     }
  })
 
