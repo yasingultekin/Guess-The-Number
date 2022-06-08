@@ -8,7 +8,7 @@ let gameEnd = document.querySelector('.game-end');
 const please = document.querySelector('.please');
 const inputContainer = document.querySelector('.input-container');
 const numberInput = document.querySelector('#number');
-let life = 3;
+let life = 7;
 let random = Math.floor(Math.random() * 100 + 1);
 
 console.log(random);
