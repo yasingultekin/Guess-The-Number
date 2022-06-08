@@ -52,6 +52,7 @@ input {
     border-radius: 6px;
     color: rgb(3, 3, 39);
     cursor: pointer;
+    margin-top: 1rem;
 }
 
 button {
